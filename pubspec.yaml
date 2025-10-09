@@ -1,0 +1,48 @@
+name: kilo
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_staggered_animations: ^1.1.1
+  image_picker: ^1.2.0
+  firebase_core: ^4.1.1
+  cloud_firestore: ^6.0.2
+  firebase_storage: ^13.0.2
+  firebase_auth: ^6.1.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4   # versi terbaru agar compatible
+  flutter_native_splash: ^2.4.6     # versi terbaru compatible
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png  # pastikan logo ada di folder ini
+
+# Config untuk launcher icon
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+
+# Config untuk splash screen
+flutter_native_splash:
+  color: "#ffffff"          # warna background splash screen
+  image: assets/logo.png    # path logo untuk splash
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: center
